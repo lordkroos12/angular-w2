@@ -1,0 +1,48 @@
+.book-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section{
+    display: flex;
+    align-items: center;
+    padding:10px;
+}
+.section p{
+    margin:15px;
+}
+.rating-section{
+    display: flex;
+}
+.rating-section button{
+    margin:5px
+}
+.inner{
+    font-size: large;
+    font-weight: 900;
+    margin:20px;
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+  }
+  
+  .centered-div {
+    width: 200px; 
+    height: 100px; 
+    background-color: lightblue; 
+    margin: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fin{
+    color:red;
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 30px;
+  }
