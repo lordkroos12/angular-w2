@@ -90,6 +90,7 @@ export class AppComponent {
   }
   messageDisplay()
   {
+    this.isFinished = false;
     this.message = true;
   }
 }

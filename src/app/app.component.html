@@ -1,4 +1,4 @@
-<div class="book-info" *ngIf="!isFinished">
+<div class="book-info" *ngIf="!isFinished && !message">
   <div class="section">
     <p>Title: </p>
     <input type="text" [value]="this.book[currentIndex].title" #inputTitle>
@@ -21,7 +21,6 @@
   </div>
 </div>
 <div *ngIf="isFinished">
-  <div class="fin" *ngIf="message">You finished!</div>
   <div class="container" >
     <div class="centered-div">
       <div class="inner" (click)="goBack()">I want to rate again!</div>
@@ -31,3 +30,4 @@
     </div>
   </div>
 </div>
+<div class="fin" *ngIf="message">You finished!</div>
