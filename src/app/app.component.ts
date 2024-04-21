@@ -22,7 +22,7 @@ export class AppComponent {
   public message = false;
   public isFinished = false;
   public currentIndex = 0;
-  public itteration = 1;
+  public iteration = 1;
   book: Book[] = [{
     title: "The Hunger Games",
     description: "In the ruins of a place once known as North America lies the nation of Panem, a shining Capitol surrounded by twelve outlying districts. The Capitol is harsh and cruel and keeps the districts in line by forcing them all to send one boy and one girl between the ages of twelve and eighteen to participate in the annual Hunger Games, a fight to the death on live TV.",
@@ -70,7 +70,7 @@ export class AppComponent {
 
   saveData(inputTitle:HTMLInputElement,inputDescription:HTMLTextAreaElement,inputAuthor: HTMLInputElement,rate:number) {
     this.book[this.currentIndex].sum += rate;
-    this.book[this.currentIndex].rating = Math.round((this.book[this.currentIndex].sum / this.itteration) * 2) / 2;
+    this.book[this.currentIndex].rating = Math.round((this.book[this.currentIndex].sum / this.iteration) * 2) / 2;
 
     this.book[this.currentIndex].title = inputTitle.value;
     this.book[this.currentIndex].description = inputDescription.value;
@@ -82,7 +82,7 @@ export class AppComponent {
     else {
       this.isFinished = true;
       this.currentIndex = 0;
-      this.itteration++;
+      this.iteration++;
     }
   }
   goBack() {
